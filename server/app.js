@@ -2,17 +2,18 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
-
+// const cors = require('cors');
 
 
 require('./db/conn');
 
 
 app.use(express.json());
+// app.use(cors());
 
 
 app.use(require('./Api/authApi'));
-
+app.use(require('./Api/QuestionApi'));
 
 
 

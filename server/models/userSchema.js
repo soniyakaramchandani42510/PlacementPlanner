@@ -19,8 +19,10 @@ const userSchema=new moongoose.Schema({
     cpassword:{
         type:String,
         required:true,
+    },
+    questionsolved:{
+      type:[{}],
     }
-    
 })
 
 const User=moongoose.model('users',userSchema);
