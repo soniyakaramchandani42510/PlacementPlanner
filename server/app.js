@@ -19,7 +19,7 @@ app.use(require('./Api/QuestionApi'));
 
 // Middelware 
 const middleware = (req,res, next) => {
-    console.log(`Hello my Middleware`);
+    // console.log(`Hello my Middleware`);
     next();
 }
 
